@@ -1,0 +1,29 @@
+{
+  "name": "webpack_test_3",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "babel-loader": "^8.2.2",
+    "jshint": "^2.12.0",
+    "jshint-loader": "^0.8.4",
+    "strip-loader": "^0.1.2",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.2",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "clean": "shx rm -rf lib build",
+    "start": "webpack serve",
+    "build": "npm run clean &&  webpack --mode=development",
+    "build_prod": "npm run clean &&  webpack --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shx": "^0.3.3"
+  }
+}
